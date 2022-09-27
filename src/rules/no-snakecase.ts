@@ -24,6 +24,18 @@ export const rule: Rule.RuleModule = {
           }
         });
       },
+      FunctionDeclaration: (node) => {
+        context.getDeclaredVariables(node).forEach((variable) => {
+          variable.identifiers.forEach((identifier) => {
+            if (isSnakeCaseVariable(identifier.name)) {
+              context.report({
+                message: 'camelcaseで定義してください',
+                node,
+              });
+            }
+          });
+        });
+      },
     };
   },
 };
