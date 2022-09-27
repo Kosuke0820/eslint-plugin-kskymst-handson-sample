@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-kskymst-handson-sample",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "lib/index.js",
   "repository": "git@github.com:Kosuke0820/eslint-plugin-kskymst-handson-sample.git",
   "author": "Kosuke0820 <toxicsound.ksk@gmail.com>",
   "license": "MIT",
